@@ -64,18 +64,25 @@ WHERE
     sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
     gender IS NULL OR age IS NULL OR category IS NULL OR 
     quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+```
 
-
--- How many Sales we have?
+### 1.How many Sales we have?
+```sql
 SELECT COUNT(*) as total_sales FROM retail_sales;
+```
 
---How many unique Customers we have?
+### 2.How many unique Customers we have?
+```sql
 SELECT COUNT(DISTINCT customer_id) as unique_customers FROM retail_sales;
+```
 
---How many unique Categories do we have?
+### 3.How many unique Categories do we have?
+```sql
 SELECT COUNT(DISTINCT category)as diff_categories FROM retail_sales;
+```
 
--- What are the different Categories we have?
+### 4.What are the different Categories we have?
+```sql
 SELECT DISTINCT category as categories FROM retail_sales;
 ```
 ### 3. Data Analysis & Findings
